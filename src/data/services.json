@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Infraestrutura Cloud",
+    "description": "Gerenciamento de infraestrutura em nuvem com foco em AWS, GCP e Azure. Criação de topologias de rede, gerenciamento de instâncias, containers e serviços gerenciados.",
+    "icon": "FaCloud"
+  },
+  {
+    "title": "Segurança da Informação (Blue Team)",
+    "description": "Implementação de ferramentas e práticas de defesa cibernética. Análise de insights de segurança e configuração de WAF, Security Groups, e monitoramento de ameaças.",
+    "icon": "FaShieldAlt"
+  },
+  {
+    "title": "Automação com IaC",
+    "description": "Provisionamento de infraestrutura utilizando Terraform e Ansible. Implantação rápida e escalável com código versionado e reprodutível.",
+    "icon": "FaCogs"
+  },
+  {
+    "title": "DevOps e CI/CD",
+    "description": "Automação de pipelines de build, test e deploy com Azure DevOps, GitHub Actions e integração com observabilidade e alertas.",
+    "icon": "FaTools"
+  },
+  {
+    "title": "Observabilidade e Monitoramento",
+    "description": "Configuração de soluções como Prometheus, Grafana, Loki, New Relic, AWS CloudWatch e Metabase para garantir visibilidade total da infraestrutura e aplicações.",
+    "icon": "FaEye"
+  },
+  {
+    "title": "Docência em TI",
+    "description": "Atuação como professor universitário na área de tecnologia, promovendo inovação e aplicando práticas reais de mercado em sala de aula.",
+    "icon": "FaChalkboardTeacher"
+  }
+]

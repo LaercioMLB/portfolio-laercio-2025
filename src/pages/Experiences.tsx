@@ -1,0 +1,30 @@
+import ExperienceTimeline from "../components/ExperienceTimeline";
+
+const experiences = [
+  {
+    role: "Professor",
+    company: "Uniamérica · Meio período",
+    period: "fev de 2025 - o momento",
+    duration: "6 meses",
+  },
+  {
+    role: "Especialista em Operações de TI",
+    company: "valloo  · Tempo integral",
+    period: "nov de 2024 - o momento",
+    duration: "9 meses",
+  },
+  {
+    role: "Analista Devops",
+    company: "Tree ID · Tempo integral",
+    period: "fev de 2023 - out de 2024",
+    duration: "1 ano 9 meses",
+  },
+];
+
+export default function Experiences() {
+  return (
+    <div>
+      <ExperienceTimeline experiences={experiences} />
+    </div>
+  );
+}
