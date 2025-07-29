@@ -5,8 +5,9 @@ import githubIcon from "../../assets/github.svg";
 
 const tabs = [
   { path: "/", label: "Sobre" },
-  { path: "/experiences", label: "Experiências" },
+  { path: "/experiences", label: "Experiência" },
   { path: "/services", label: "Serviços" },
+  { path: "/contact", label: "Contato" },
 ];
 
 export default function TabMenu() {

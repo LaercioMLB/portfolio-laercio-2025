@@ -23,11 +23,9 @@ const ExperienceTimeline = ({ experiences }: Props) => {
           {/* Conteúdo */}
           <div className="ml-6">
             <h3 className="font-semibold italic">{exp.role}</h3>
-            <p className="text-sm text-gray-800">
-              {exp.company}{" "}
-              <span className="text-gray-500">
-                ({exp.period} · {exp.duration})
-              </span>
+            <p className="text-sm text-gray-800">{exp.company}</p>
+            <p className="text-sm text-gray-500">
+              ({exp.period} · {exp.duration})
             </p>
           </div>
         </div>

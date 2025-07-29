@@ -5,13 +5,15 @@ import Experiences from "./pages/Experiences";
 import Services from "./pages/Services";
 import NotFound from "./pages/NotFound";
 import Footer from "./components/Footer";
+import Contact from "./pages/Contact";
 
 function App() {
   const location = useLocation();
   const isNotFound =
     location.pathname !== "/" &&
     location.pathname !== "/experiences" &&
-    location.pathname !== "/services";
+    location.pathname !== "/services" &&
+    location.pathname !== "/contact";
   return (
     <div className="flex flex-col min-h-screen max-w-7xl mx-auto w-full p-12">
       {!isNotFound && <TabMenu />}
@@ -19,6 +21,7 @@ function App() {
         <Route path="/" element={<About />} />
         <Route path="/experiences" element={<Experiences />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

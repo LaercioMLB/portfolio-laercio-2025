@@ -1,30 +1,14 @@
 import ExperienceTimeline from "../components/ExperienceTimeline";
-
-const experiences = [
-  {
-    role: "Professor",
-    company: "Uniamérica · Meio período",
-    period: "fev de 2025 - o momento",
-    duration: "6 meses",
-  },
-  {
-    role: "Especialista em Operações de TI",
-    company: "valloo  · Tempo integral",
-    period: "nov de 2024 - o momento",
-    duration: "9 meses",
-  },
-  {
-    role: "Analista Devops",
-    company: "Tree ID · Tempo integral",
-    period: "fev de 2023 - out de 2024",
-    duration: "1 ano 9 meses",
-  },
-];
+import experiences from "../data/experiences.json";
+import academicBackground from "../data/academicBackground.json";
 
 export default function Experiences() {
   return (
-    <div>
+    <div className="mb-10">
+      <h1 className="text-1xl font-bold mb-4">Experiência</h1>
       <ExperienceTimeline experiences={experiences} />
+      <h1 className="text-1xl font-bold mb-4 mt-12">Formação acadêmica</h1>
+      <ExperienceTimeline experiences={academicBackground} />
     </div>
   );
 }
