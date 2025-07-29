@@ -1,4 +1,5 @@
-import { MdEmail, MdPhone } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Contact() {
   const contactItems = [
@@ -7,28 +8,19 @@ export default function Contact() {
       title: "E-mail",
       subtitle: "Tem alguma dúvida?",
       detail: "contato@laercio.me",
+      link: "mailto:contato@laercio.me",
     },
     {
-      icon: <MdPhone className="text-4xl " />,
-      title: "Telefone",
-      subtitle: "Você pode ligar a qualquer hora.",
+      icon: <FaWhatsapp className="text-4xl " />,
+      title: "Whatsapp",
+      subtitle: "Você pode chamar a qualquer hora.",
       detail: "+55 45 9859-2126",
+      link: "https://wa.me/554598592126?text=Olá%20Laercio,%20gostaria%20de%20falar%20com%20você!",
     },
   ];
   return (
     <div className="flex flex-col">
       <h1 className="text-2xl font-bold ml-3">Como prefere falar comigo?</h1>
-      {/* <div className="flex flex-col">
-        {contactItems.map((item, idx) => (
-          <div key={idx} className="flex flex-col space-y-2  m-10">
-            {item.icon}
-            <h3 className="text-lg font-semibold ">{item.title}</h3>
-            <p className="text-sm text-gray-300">{item.subtitle}</p>
-            <p className="text-sm font-semibold">{item.detail}</p>
-          </div>
-        ))}
-      </div> */}
-
       <div className="relative flex flex-col mt-10">
         {contactItems.map((item, idx) => (
           <div key={idx} className="relative flex items-start pb-12">
@@ -43,7 +35,14 @@ export default function Contact() {
               {item.icon}
               <h3 className="text-lg font-semibold ">{item.title}</h3>
               <p className="text-sm text-gray-300">{item.subtitle}</p>
-              <p className="text-sm font-semibold">{item.detail}</p>
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-semibold hover:underline"
+              >
+                {item.detail}
+              </a>
             </div>
           </div>
         ))}
