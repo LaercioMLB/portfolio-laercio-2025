@@ -4,17 +4,17 @@ import { FaWhatsapp } from "react-icons/fa";
 export default function Contact() {
   const contactItems = [
     {
-      icon: <MdEmail className="text-4xl " />,
+      icon: <MdEmail className="text-3xl " />,
       title: "E-mail",
       subtitle: "Tem alguma dúvida?",
       detail: "contato@laercio.me",
       link: "mailto:contato@laercio.me",
     },
     {
-      icon: <FaWhatsapp className="text-4xl " />,
+      icon: <FaWhatsapp className="text-3xl " />,
       title: "Whatsapp",
       subtitle: "Você pode chamar a qualquer hora.",
-      detail: "+55 45 9859-2126",
+      detail: "Entrar em contato",
       link: "https://wa.me/554598592126?text=Olá%20Laercio,%20gostaria%20de%20falar%20com%20você!",
     },
   ];

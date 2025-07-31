@@ -1,8 +1,11 @@
+import { HiOutlineExternalLink } from "react-icons/hi";
+
 type Experience = {
   role: string;
   company: string;
   period: string;
   duration: string;
+  credentialUrl?: string;
 };
 
 type Props = {
@@ -25,8 +28,20 @@ const ExperienceTimeline = ({ experiences }: Props) => {
             <h3 className="font-semibold italic">{exp.role}</h3>
             <p className="text-sm text-gray-800">{exp.company}</p>
             <p className="text-sm text-gray-500">
-              ({exp.period} · {exp.duration})
+              ({exp.period}
+              {exp.duration && ` · ${exp.duration}`})
             </p>
+            {exp.credentialUrl && exp.credentialUrl.trim() !== "" && (
+              <a
+                href={exp.credentialUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-black border border-gray-300 rounded-full px-3 py-1 text-xs mt-1 font-medium hover:bg-gray-100 transition-colors"
+              >
+                Exibir credencial
+                <HiOutlineExternalLink className="w-4 h-4 ml-2" />
+              </a>
+            )}
           </div>
         </div>
       ))}
