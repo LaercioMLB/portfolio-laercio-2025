@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import profileImg from "../../assets/profile.jpeg";
-import linkedinIcon from "../../assets/linkedin.svg";
-import githubIcon from "../../assets/github.svg";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaMedium } from "react-icons/fa6";
 
 const tabs = [
   { path: "/", label: "Sobre" },
@@ -28,14 +28,21 @@ export default function TabMenu() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={linkedinIcon} alt="LinkedIn" className="w-7 h-7" />
+          <FaLinkedin className="w-7 h-7 text-black" />
         </a>
         <a
           href="https://github.com/LaercioMLB"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={githubIcon} alt="GitHub" className="w-7 h-7" />
+          <FaGithub className="w-7 h-7 text-black" />
+        </a>
+        <a
+          href="https://labub.medium.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaMedium className="w-7 h-7 text-black" />
         </a>
       </div>
       <hr className="my-8 border-gray-300" />
