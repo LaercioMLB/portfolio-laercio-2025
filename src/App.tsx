@@ -17,7 +17,7 @@ function App() {
     location.pathname !== "/contact" &&
     location.pathname !== "/certifications";
   return (
-    <div className="flex flex-col min-h-screen max-w-7xl mx-auto w-full p-12">
+    <div className="flex flex-col min-h-screen max-w-7xl mx-auto w-full p-3 sm:p-12">
       {!isNotFound && <TabMenu />}
       <Routes>
         <Route path="/" element={<About />} />
