@@ -66,14 +66,12 @@ export default function TabMenu() {
       {/* Navegação responsiva - Drawer fullscreen em mobile */}
       <nav
         className={`
-          fixed inset-0 z-50 bg-white transition-transform duration-300 ease-in-out
           ${
             menuOpen
-              ? "flex translate-x-0"
-              : "flex -translate-x-full pointer-events-none"
+              ? "fixed inset-0 z-50 bg-white flex flex-col items-center justify-start pt-8 gap-4 w-full h-full transition-transform duration-300 ease-in-out translate-x-0"
+              : "fixed inset-0 z-50 bg-white flex flex-col items-center justify-start pt-8 gap-4 w-full h-full transition-transform duration-300 ease-in-out -translate-x-full pointer-events-none"
           }
-          flex-col items-center justify-start pt-8 gap-4 w-full h-full
-          sm:static sm:flex sm:flex-row sm:justify-start sm:gap-4 sm:mb-0 sm:bg-transparent sm:w-full sm:h-auto sm:pt-0 sm:inset-auto sm:z-auto sm:transition-none sm:translate-x-0
+          sm:static sm:z-auto sm:bg-transparent sm:w-full sm:h-auto sm:pt-0 sm:inset-auto sm:flex sm:flex-row sm:justify-start sm:gap-4 sm:mb-0 sm:transition-none sm:translate-x-0 sm:pointer-events-auto
         `}
       >
         {/* Botão fechar só no mobile */}
