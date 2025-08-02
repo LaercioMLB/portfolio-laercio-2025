@@ -21,7 +21,7 @@ export default function TabMenu() {
       />
       <p className="mt-3 text-2xl font-light ">Laércio Bubiak da Cruz</p>
       <p className="text-[#5C5C5C] text-base italic font-semibold mb-5">
-        Especialista em Operações de TI
+        Especialista em Operações Cloud
       </p>
       <div className="flex items-center space-x-4 mt-2 mb-2">
         <a
