@@ -1,32 +1,32 @@
 [
   {
     "title": "Infraestrutura Cloud",
-    "description": "Gerenciamento de infraestrutura em nuvem com foco em AWS, GCP e Azure. Criação de topologias de rede, gerenciamento de instâncias, containers e serviços gerenciados.",
+    "description": "Planejamento, implantação e gestão de ambientes em nuvem, garantindo alta disponibilidade, escalabilidade e eficiência de custos.",
     "icon": "FaCloud"
   },
   {
+    "title": "Arquiteto de Soluções",
+    "description": "Desenho de arquiteturas robustas e seguras, alinhadas às necessidades do negócio, aplicando boas práticas e tecnologias modernas.",
+    "icon": "FaChalkboardTeacher"
+  },
+  {
     "title": "Segurança da Informação (Blue Team)",
-    "description": "Implementação de ferramentas e práticas de defesa cibernética. Análise de insights de segurança e configuração de WAF, Security Groups, e monitoramento de ameaças.",
+    "description": "Atuação em defesa cibernética, análise de riscos, implementação de controles e monitoramento para proteção dos ativos digitais.",
     "icon": "FaShieldAlt"
   },
   {
-    "title": "Automação com IaC",
-    "description": "Provisionamento de infraestrutura utilizando Terraform e Ansible. Implantação rápida e escalável com código versionado e reprodutível.",
+    "title": "DevOps, Automação e IaC",
+    "description": "Integração de práticas ágeis, automação de pipelines e padronização de ambientes com Infraestrutura como Código, acelerando entregas com qualidade e confiabilidade.",
     "icon": "FaCogs"
   },
   {
-    "title": "DevOps e CI/CD",
-    "description": "Automação de pipelines de build, test e deploy com Azure DevOps, GitHub Actions e integração com observabilidade e alertas.",
-    "icon": "FaTools"
+    "title": "FinOps",
+    "description": "Gestão financeira em ambientes de nuvem, com foco em otimização de custos, governança e tomada de decisões baseadas em dados para equilibrar desempenho e eficiência.",
+    "icon": "FaMoneyBillWave"
   },
   {
     "title": "Observabilidade e Monitoramento",
-    "description": "Configuração de soluções como Prometheus, Grafana, Loki, New Relic, AWS CloudWatch e Metabase para garantir visibilidade total da infraestrutura e aplicações.",
+    "description": "Implementação de métricas, logs e alertas para garantir visibilidade em tempo real dos sistemas e antecipação de incidentes.",
     "icon": "FaEye"
-  },
-  {
-    "title": "Docência em TI",
-    "description": "Atuação como professor universitário na área de tecnologia, promovendo inovação e aplicando práticas reais de mercado em sala de aula.",
-    "icon": "FaChalkboardTeacher"
   }
 ]
