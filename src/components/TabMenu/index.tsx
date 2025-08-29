@@ -58,20 +58,28 @@ export default function TabMenu() {
           sm:py-0 sm:border-t-0
         "
       >
-        {tabs.map((tab) => (
-          <NavLink
-            key={tab.path}
-            to={tab.path}
-            end
-            className={({ isActive }) =>
-              isActive
-                ? "bg-black text-white rounded px-2 py-1 font-bold text-sm sm:text-base"
-                : "text-black hover:bg-gray-100 rounded px-2 py-1 font-bold text-sm sm:text-base"
-            }
-          >
-            {tab.label}
-          </NavLink>
-        ))}
+        {tabs.map((tab) => {
+          // Oculta a tab Certificações no mobile
+          const isCertTab = tab.path === "/certifications";
+          return (
+            <NavLink
+              key={tab.path}
+              to={tab.path}
+              end
+              className={({ isActive }) =>
+                isActive
+                  ? `bg-black text-white rounded px-2 py-1 font-bold text-sm sm:text-base ${
+                      isCertTab ? "hidden sm:inline" : ""
+                    }`
+                  : `text-black hover:bg-gray-100 rounded px-2 py-1 font-bold text-sm sm:text-base ${
+                      isCertTab ? "hidden sm:inline" : ""
+                    }`
+              }
+            >
+              {tab.label}
+            </NavLink>
+          );
+        })}
       </nav>
     </div>
   );
