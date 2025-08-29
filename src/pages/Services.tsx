@@ -5,6 +5,7 @@ import {
   FaTools,
   FaEye,
   FaChalkboardTeacher,
+  FaMoneyBillWave,
 } from "react-icons/fa";
 import services from "../data/services.json";
 import ServiceItem from "../components/ServiceItem";
@@ -16,6 +17,7 @@ const iconMap = {
   FaTools,
   FaEye,
   FaChalkboardTeacher,
+  FaMoneyBillWave
 };
 
 export default function Services() {
