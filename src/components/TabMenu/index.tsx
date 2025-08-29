@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import profileImg from "../../assets/profile.jpeg";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
