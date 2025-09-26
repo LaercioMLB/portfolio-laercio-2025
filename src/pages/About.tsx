@@ -1,22 +1,30 @@
 import HighlightCard from "../components/HighlightCard";
 import destaque1 from "../assets/destaque-1.jpeg";
 import destaque2 from "../assets/destaque-2.jpeg";
+import destaque3 from "../assets/destaque-3.jpeg";
 
 const highlights = [
   {
     image: destaque1,
+    content:
+      "No começo deste semestre, recebi um desafio junto com o professor Wagner Jorcuvich que seria lecionar para 95 alunos...",
+    likes: 49,
+    url: "https://www.linkedin.com/feed/update/urn:li:activity:7377295895798816768/",
+  },
+  {
+    image: destaque2,
     content:
       "Finalizando meu primeiro semestre como Docente na Uniamérica, fico muito feliz com...",
     likes: 46,
     url: "https://www.linkedin.com/feed/update/urn:li:activity:7348807818948370432/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7348807818948370432%29",
   },
   {
-    image: destaque2,
+    image: destaque3,
     content:
       "Com grande satisfação, venho compartilhar a vitória da minha equipe no Hackatour Cataratas, onde ficamos em...",
     likes: 21,
     url: "https://www.linkedin.com/feed/update/urn:li:activity:7043719835440025600/",
-  },
+  }
 ];
 
 export default function About() {
