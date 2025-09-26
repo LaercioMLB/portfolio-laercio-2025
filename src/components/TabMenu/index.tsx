@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
-import profileImg from "../../assets/profile.jpeg";
+import profileImg from "../../assets/profile.png";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { FaMedium } from "react-icons/fa6";
+import { FaMedium, FaClipboardUser } from "react-icons/fa6";
 
 const tabs = [
   { path: "/", label: "Sobre" },
@@ -17,7 +17,7 @@ export default function TabMenu() {
       <img
         src={profileImg}
         alt="Profile"
-        className="w-20 h-20 rounded-full mr-4 mt-12 sm:mt-0"
+        className="w-100 h-100 rounded-full mr-4 mt-12 sm:mt-0"
       />
       <p className="mt-3 text-2xl text-center font-light ">
         Laércio Bubiak da Cruz
@@ -32,6 +32,13 @@ export default function TabMenu() {
           rel="noopener noreferrer"
         >
           <FaLinkedin className="w-7 h-7 text-black" />
+        </a>
+        <a
+          href="https://lattes.cnpq.br/9505071603628482"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaClipboardUser className="w-7 h-7 text-black" />
         </a>
         <a
           href="https://github.com/LaercioMLB"
