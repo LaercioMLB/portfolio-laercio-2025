@@ -7,7 +7,7 @@ const tabs = [
   { path: "/", label: "Sobre" },
   { path: "/experiences", label: "Experiência" },
   // { path: "/certifications", label: "Certificações" },
-  { path: "/services", label: "Serviços" },
+  // { path: "/services", label: "Serviços" },
   { path: "/contact", label: "Contato" },
 ];
 
