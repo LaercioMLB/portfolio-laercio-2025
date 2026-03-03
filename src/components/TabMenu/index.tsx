@@ -23,7 +23,7 @@ export default function TabMenu() {
         Laércio Bubiak da Cruz
       </p>
       <p className="text-[#5C5C5C] text-center text-base italic font-semibold mb-5">
-        Arquiteto de Soluções Cloud
+        Arquiteto Soluções Cloud / DevSecOps / Infraestrutura e Redes
       </p>
       <div className="flex items-center space-x-4 mt-2 mb-2">
         <a
@@ -91,3 +91,4 @@ export default function TabMenu() {
     </div>
   );
 }
+
